@@ -11,8 +11,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class TestBase {
 
-    public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
-    public WebDriver driver;
+   public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
+    public static WebDriver driver;
     public WebDriverWait wait;
 
     @Before
@@ -23,7 +23,8 @@ public class TestBase {
             return;
         }
         DesiredCapabilities caps = new DesiredCapabilities();
-        caps.setCapability(FirefoxDriver.MARIONETTE, false);
+        System.setProperty("webdriver.gecko.driver", "D:\\drivers\\geckodriver.exe");
+       // caps.setCapability(FirefoxDriver.MARIONETTE, false);
         driver = new FirefoxDriver(caps);
         tlDriver.set(driver);
         System.out.println(((HasCapabilities) driver).getCapabilities());
@@ -35,8 +36,8 @@ public class TestBase {
 
     @After
     public void stop() {
-        //driver.quit();
-        //driver = null;
+        driver.quit();
+        driver = null;
     }
 }
 

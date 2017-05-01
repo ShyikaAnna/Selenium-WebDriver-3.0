@@ -15,12 +15,12 @@ public class FirstTest  extends TestBase {
 
 
 
-    @Before
-    public void Start() {
-        System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
-        driver = new ChromeDriver();
-        wait = new WebDriverWait(driver, 10);
-    }
+//    @Before
+//    public void Start() {
+//        System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
+//        driver = new ChromeDriver();
+//        wait = new WebDriverWait(driver, 10);
+//    }
 
     @Test
     public void MyFirstTest() {
@@ -30,9 +30,9 @@ public class FirstTest  extends TestBase {
         wait.until(titleIs("webdriver - Поиск в Google"));
     }
 
-    @After
-    public void stop() {
-        driver.quit();
-        driver = null;
-    }
+//    @After
+//    public void stop() {
+//        driver.quit();
+//        driver = null;
+//    }
 }
