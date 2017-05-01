@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e816e2ca-6057-425e-aa24-d6e2287da06c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/SeleniumTests/Task7_Sidebar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SeleniumTests/FirstTest.java" afterPath="$PROJECT_DIR$/src/test/java/SeleniumTests/FirstTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SeleniumTests/LiteCartShop.java" afterPath="$PROJECT_DIR$/src/test/java/SeleniumTests/LiteCartShop.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SeleniumTests/Task7_Sidebar.java" afterPath="$PROJECT_DIR$/src/test/java/SeleniumTests/Task7_Sidebar.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SeleniumTests/TestBase.java" afterPath="$PROJECT_DIR$/src/test/java/SeleniumTests/TestBase.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -125,21 +122,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Task7_Sidebar.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Task7_Sidebar.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/SeleniumTests/Task7_Sidebar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="391">
+              <caret line="23" column="68" lean-forward="false" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="68" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/SeleniumTests/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+            <state relative-caret-position="149">
+              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -152,7 +151,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="175">
               <caret line="67" column="25" lean-forward="false" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-              <folding />
+              <folding>
+                <element signature="e#0#2044#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -162,7 +163,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="149">
               <caret line="67" column="25" lean-forward="false" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-              <folding />
+              <folding>
+                <element signature="e#0#2044#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -470,9 +473,10 @@
         <option value="$PROJECT_DIR$/src/test/java/SeleniumTests/TestBase" />
         <option value="$PROJECT_DIR$/src/test/java/SeleniumTests/LiteCartShopFF.java" />
         <option value="$PROJECT_DIR$/src/test/java/SeleniumTests/FirstTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SeleniumTests/TestBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/SeleniumTests/LiteCartShop.java" />
+        <option value="D:/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-api/3.4.0/1a0347cf7295dc29ea2087568037e69e83079c81/selenium-api-3.4.0-sources.jar!/org/openqa/selenium/By.java" />
         <option value="$PROJECT_DIR$/src/test/java/SeleniumTests/Task7_Sidebar.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SeleniumTests/TestBase.java" />
       </list>
     </option>
   </component>
@@ -932,34 +936,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FirstTest - 2017.04.27 at 13h 28m 01s.xml">
-      <configuration name="FirstTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest - 2017.04.27 at 13h 28m 31s.xml">
-      <configuration name="FirstTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest - 2017.04.27 at 13h 37m 40s.xml">
-      <configuration name="FirstTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest - 2017.04.27 at 14h 14m 34s.xml">
-      <configuration name="FirstTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest - 2017.04.30 at 16h 05m 14s.xml">
-      <configuration name="FirstTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LiteCartShop - 2017.05.01 at 06h 51m 20s.xml">
-      <configuration name="LiteCartShop" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LiteCartShopFF - 2017.05.01 at 06h 52m 21s.xml">
-      <configuration name="LiteCartShopFF" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Task7_Sidebar - 2017.05.01 at 15h 48m 29s.xml">
+    <history-entry file="Task7_Sidebar - 2017.05.01 at 16h 53m 12s.xml">
       <configuration name="Task7_Sidebar" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Task7_Sidebar - 2017.05.01 at 16h 02m 23s.xml">
+    <history-entry file="Task7_Sidebar - 2017.05.01 at 16h 55m 16s.xml">
       <configuration name="Task7_Sidebar" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Task7_Sidebar - 2017.05.01 at 16h 09m 01s.xml">
+    <history-entry file="Task7_Sidebar - 2017.05.01 at 17h 05m 38s.xml">
+      <configuration name="Task7_Sidebar" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Task7_Sidebar - 2017.05.01 at 17h 09m 25s.xml">
+      <configuration name="Task7_Sidebar" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Task7_Sidebar - 2017.05.01 at 17h 12m 49s.xml">
+      <configuration name="Task7_Sidebar" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Task7_Sidebar - 2017.05.01 at 17h 25m 03s.xml">
+      <configuration name="Task7_Sidebar" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Task7_Sidebar - 2017.05.01 at 17h 27m 15s.xml">
+      <configuration name="Task7_Sidebar" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Task7_Sidebar - 2017.05.01 at 17h 37m 21s.xml">
+      <configuration name="Task7_Sidebar" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Task7_Sidebar - 2017.05.01 at 17h 38m 01s.xml">
+      <configuration name="Task7_Sidebar" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Task7_Sidebar - 2017.05.01 at 17h 41m 31s.xml">
       <configuration name="Task7_Sidebar" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -973,7 +977,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1089,7 +1093,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
           <caret line="67" column="25" lean-forward="false" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-          <folding />
+          <folding>
+            <element signature="e#0#2044#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1150,7 +1156,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
           <caret line="67" column="25" lean-forward="false" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-          <folding />
+          <folding>
+            <element signature="e#0#2044#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1211,7 +1219,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1139">
           <caret line="67" column="25" lean-forward="false" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-          <folding />
+          <folding>
+            <element signature="e#0#2044#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1272,7 +1282,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
           <caret line="67" column="25" lean-forward="false" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-          <folding />
+          <folding>
+            <element signature="e#0#2044#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1325,7 +1337,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
           <caret line="67" column="25" lean-forward="false" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-          <folding />
+          <folding>
+            <element signature="e#0#2044#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1448,7 +1462,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
           <caret line="67" column="25" lean-forward="false" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-          <folding />
+          <folding>
+            <element signature="e#0#2044#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1456,22 +1472,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="67" column="25" lean-forward="false" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-          <folding />
+          <folding>
+            <element signature="e#0#2044#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SeleniumTests/Task7_Sidebar.java">
+    <entry file="jar://D:/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-api/3.4.0/1a0347cf7295dc29ea2087568037e69e83079c81/selenium-api-3.4.0-sources.jar!/org/openqa/selenium/By.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="-1198">
+          <caret line="217" column="0" lean-forward="false" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SeleniumTests/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        <state relative-caret-position="149">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SeleniumTests/Task7_Sidebar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="68" lean-forward="false" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

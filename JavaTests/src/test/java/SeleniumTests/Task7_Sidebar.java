@@ -19,14 +19,11 @@ public class Task7_Sidebar extends  TestBase {
     }
 
     @Test
-    public void ClickLink() {
-        driver.findElement(By.id("doc-template")).click();
-        driver.findElement(By.cssSelector("#box-apps-menu li a .docs #doc-template")).click();
-    }
-
-    @After
-    public void stop() {
-        driver.quit();
-        driver = null;
+    public void SidebarClick() {
+        driver.findElement(By.xpath(".//*[@id='app-']/a/span[2]")).click();
+        driver.findElement(By.xpath(".//*[@id='doc-logotype']/a/span")).click();
     }
 }
+
+
+

@@ -30,14 +30,14 @@ public class TestBase {
         System.out.println(((HasCapabilities) driver).getCapabilities());
         wait = new WebDriverWait(driver, 10);
 
+
         Runtime.getRuntime().addShutdownHook(
                 new Thread(() -> { driver.quit(); driver = null; }));
     }
 
     @After
     public void stop() {
-        driver.quit();
-        driver = null;
+        //driver.quit();
     }
 }
 
