@@ -33,7 +33,6 @@ public class Task7_Sidebar extends  TestBase {
         String subItemMenuTemplate = "//ul[@class='docs']/li[%s]";
         String Title = "//main[@id='main']/h1";
         int itemsCount = driver.findElements(By.xpath(itemsMenu)).size();
-        //int i=0;
         List<WebElement> itemMenu = driver.findElements(By.xpath(itemsMenu));
         java.util.Iterator<WebElement> k = itemMenu.iterator();
         while(k.hasNext()) {
@@ -49,7 +48,7 @@ public class Task7_Sidebar extends  TestBase {
             }
         }
 
-      
+
 
 
 
