@@ -1,5 +1,7 @@
 package SeleniumTests;
 
+import com.google.common.base.Verify;
+import org.apache.http.util.Asserts;
 import org.junit.After;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -11,12 +13,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.junit.Assert.assertEquals;
 import static org.openqa.selenium.By.*;
 
 public class Task7_Sidebar extends  TestBase {
     String itemsMenu = "//ul[@id='box-apps-menu']/li";
     String subItemsMenu = "//ul[@class='docs']/li";
     String Title = "//main[@id='main']/h1";
+
     @Test
     public void MyFirstTest() {
         driver.get("http://localhost/litecart/admin/");
@@ -27,21 +31,43 @@ public class Task7_Sidebar extends  TestBase {
     }
 
     @Test
-    public  void SidebarClick() {
+    public void SidebarClick() {
+        // Calculate number of menu items
+        int itemMenuCount = driver.findElements(By.xpath(itemsMenu)).size();
+        System.out.println("Number of sub menu items = " + itemMenuCount);
+        // Open menu items one by one
+        for (int x = 1; x <= itemMenuCount; x++) {
+            WebElement item = driver.findElement(By.xpath(itemsMenu + "[" + x + "]"));
+            System.out.println("\nOpen item menu: " + item.getText());
+            item.click();
+            // Calculate number of sub menu items
+            int itemSubMenuCount = driver.findElements(By.xpath(itemsMenu + subItemsMenu)).size();
+            System.out.println("Number of sub menu items = " + itemSubMenuCount);
+            // Open sub menu items one by one
+            for (int y = 1; y <= itemSubMenuCount; y++) {
+                  WebElement subItem = driver.findElement(By.xpath(itemsMenu + "[" + x + "]" + subItemsMenu + "[" + y + "]"));
+                  System.out.println("\tOpen sub menu item: " + subItem.getText());
+                  subItem.click();
+            }
+        }
+         /*/*
         List<WebElement> itemMenu = driver.findElements(By.xpath(itemsMenu));
         java.util.Iterator<WebElement> k = itemMenu.iterator();
-        while(k.hasNext()) {
-            WebElement item = k.next();
+        while (k.hasNext()) {
+            WebElement item = (WebElement) itemMenu.iterator();
             item.click();
             System.out.println(item.getText());
+
+            List<WebElement> subItem = driver.findElements(By.xpath(subItemsMenu));
+            java.util.Iterator<WebElement> i = subItem.iterator();
+            while (i.hasNext()) {
+                WebElement subitems = i.next();
+                subitems.click();
+                System.out.println(subitems.getText());
             }
-        List<WebElement> subItem = driver.findElements(By.xpath(subItemsMenu));
-        java.util.Iterator<WebElement> i = subItem.iterator();
-        while (i.hasNext()) {
-            WebElement subitems = i.next();
-            subitems.click();
-            System.out.println(subitems.getText());
-            }
+        }
+    }
+    *//*/*/
     }
 }
 
