@@ -50,24 +50,7 @@ public class Task7_Sidebar extends  TestBase {
                   subItem.click();
             }
         }
-         /*/*
-        List<WebElement> itemMenu = driver.findElements(By.xpath(itemsMenu));
-        java.util.Iterator<WebElement> k = itemMenu.iterator();
-        while (k.hasNext()) {
-            WebElement item = (WebElement) itemMenu.iterator();
-            item.click();
-            System.out.println(item.getText());
 
-            List<WebElement> subItem = driver.findElements(By.xpath(subItemsMenu));
-            java.util.Iterator<WebElement> i = subItem.iterator();
-            while (i.hasNext()) {
-                WebElement subitems = i.next();
-                subitems.click();
-                System.out.println(subitems.getText());
-            }
-        }
-    }
-    *//*/*/
     }
 }
 
