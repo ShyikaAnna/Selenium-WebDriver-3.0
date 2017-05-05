@@ -31,14 +31,15 @@ public class Task7_Sidebar extends  TestBase {
     }
 
     @Test
-    public void SidebarClick() {
+    public void SidebarClick() throws InterruptedException {
         // Calculate number of menu items
         int itemMenuCount = driver.findElements(By.xpath(itemsMenu)).size();
-        System.out.println("Number of sub menu items = " + itemMenuCount);
+        System.out.println("Number of  menu items = " + itemMenuCount);
         // Open menu items one by one
         for (int x = 1; x <= itemMenuCount; x++) {
             WebElement item = driver.findElement(By.xpath(itemsMenu + "[" + x + "]"));
             System.out.println("\nOpen item menu: " + item.getText());
+            Thread.sleep(2000);
             item.click();
             // Calculate number of sub menu items
             int itemSubMenuCount = driver.findElements(By.xpath(itemsMenu + subItemsMenu)).size();
@@ -47,10 +48,10 @@ public class Task7_Sidebar extends  TestBase {
             for (int y = 1; y <= itemSubMenuCount; y++) {
                   WebElement subItem = driver.findElement(By.xpath(itemsMenu + "[" + x + "]" + subItemsMenu + "[" + y + "]"));
                   System.out.println("\tOpen sub menu item: " + subItem.getText());
+                  Thread.sleep(2000);
                   subItem.click();
             }
         }
-
     }
 }
 
