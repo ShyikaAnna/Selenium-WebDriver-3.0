@@ -1,71 +1,50 @@
 package SeleniumTests;
 
-import org.junit.Assert;
-import static org.junit.Assert.*;
+import OnlineShop.MyStorepage;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import static org.openqa.selenium.By.name;
-import static org.openqa.selenium.By.xpath;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.util.concurrent.TimeUnit;
+
+import static org.junit.Assert.assertTrue;
 public class Task8_Stikers extends  TestBase {
-    private String stiker = "//div[contains(@class,'sticker')]";
-    private String compaignProducts = "//a[@href='#campaign-products']";
-    private String productInCampaign ="//div[@id='box-campaigns']/div/div";
-    private String popularProducts = "//a[@href='#popular-products']";
-    private String productInPopular = "//*[@id='box-most-popular']/div/div";
-    private String latestProducts = "//a[@href='#latest-products']";
-    private String mainPage = "//img[@src='/litecart/images/slides/1-flying-cart.jpg']";
+    protected WebDriver driver;
+    protected MyStorepage myStorepage;
 
-    public boolean MainPage() {
-        By mPage = By.xpath(mainPage);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(mPage));
-        return driver.findElement(mPage).isDisplayed();
-    }
-    public void goToCampaignProducts()
+    @Before
+    public void beforeClass()
     {
-        By CampProducts = By.xpath(compaignProducts);
-        driver.findElement(CampProducts).click();
-        wait.until(ExpectedConditions.attributeContains(CampProducts, "class", "active"));
-    }
-    public int QuantityProductsInCampaign()
-    {
-        By lProductsInCampaign = By.xpath(productInCampaign);
-        return driver.findElements(lProductsInCampaign).size();
-    }
-    public boolean checkStikerInCampaign(int i)
-    {
-        By ProductInCamp = By.xpath(String.format(productInCampaign, "" + i));
-        WebElement product = driver.findElement(ProductInCamp);
-        By Stikers = By.xpath(stiker);
-        return (product.findElements(Stikers).size() == 1);
+        System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
+        driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().deleteAllCookies();
+       // ((RemoteWebDriver) driver).setLogLevel(Level.FINEST);
+        driver.manage().window().maximize();
+        //myStorepage = new MyStorepage(driver);
+
+
     }
 
-    /*public boolean checkStikerInPopular(int j)
-    {
-        By lProductInCampaignTemplate = By.xpath(String.format(productInCampaignTemplate, "" + j));
-        WebElement element = driver.findElement(lProductInCampaignTemplate);
-        By Stiker = By.xpath(stiker);
-        return (element.findElements(Stiker).size() == 1);
-    }*/
 
     @Test
     public void LoginAndCheckStikers() {
-        driver.get("http://localhost/litecart/admin/");
-        driver.findElement(name("username")).sendKeys("admin");
-        driver.findElement(name("password")).sendKeys("admin");
-        driver.findElement(name("remember_me")).click();
-        driver.findElement(xpath(".//*[@id='box-login']/form/div[2]/button")).click();
+        myStorepage = new MyStorepage(driver);
         driver.get("http://localhost/litecart/en/");
-        driver.get(goToCampaignProducts());
-        int QuantityProductsInCampaign = QuantityProductsInCampaign();
+        myStorepage.goToCampaignProducts();
+        int QuantityProductsInCampaign = myStorepage.QuantityProductsInCampaign();
 
         for (int i = 1; i <= QuantityProductsInCampaign; i++)
         {
-            assertTrue(checkStikerInCampaign(i));
+            assertTrue(myStorepage.checkStikerInCampaign(i));
         }
 
     }
-
+    @After
+    public void afterClass()
+    {
+        driver.quit();
+    }
 }
