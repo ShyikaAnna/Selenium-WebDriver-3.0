@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e816e2ca-6057-425e-aa24-d6e2287da06c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/OnlineShop/Countries.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/SeleniumTests/Task9_Sorting.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/OnlineShop/Countries.java" afterPath="$PROJECT_DIR$/src/main/java/OnlineShop/Countries.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SeleniumTests/Task9_Sorting.java" afterPath="$PROJECT_DIR$/src/test/java/SeleniumTests/Task9_Sorting.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -114,11 +113,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Task9_Sorting.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Task9_Sorting.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/SeleniumTests/Task9_Sorting.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-197">
-              <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+            <state relative-caret-position="347">
+              <caret line="34" column="83" lean-forward="false" selection-start-line="34" selection-start-column="83" selection-end-line="34" selection-end-column="83" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -126,14 +125,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Countries.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Countries.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/OnlineShop/Countries.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="74" column="5" lean-forward="true" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+            <state relative-caret-position="-826">
+              <caret line="27" column="47" lean-forward="false" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1742#1751#0" expanded="true" />
+                <element signature="e#1642#1651#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -475,8 +474,8 @@
         <option value="D:/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java" />
         <option value="$PROJECT_DIR$/src/main/java/OnlineShop/MyStorepage.java" />
         <option value="$PROJECT_DIR$/src/test/java/SeleniumTests/Task8_Stikers.java" />
-        <option value="$PROJECT_DIR$/src/main/java/OnlineShop/Countries.java" />
         <option value="$PROJECT_DIR$/src/test/java/SeleniumTests/Task9_Sorting.java" />
+        <option value="$PROJECT_DIR$/src/main/java/OnlineShop/Countries.java" />
       </list>
     </option>
   </component>
@@ -1535,23 +1534,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/OnlineShop/Countries.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SeleniumTests/Task9_Sorting.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="74" column="5" lean-forward="true" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+        <state relative-caret-position="347">
+          <caret line="34" column="83" lean-forward="false" selection-start-line="34" selection-start-column="83" selection-end-line="34" selection-end-column="83" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1742#1751#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SeleniumTests/Task9_Sorting.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/OnlineShop/Countries.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-197">
-          <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+        <state relative-caret-position="-826">
+          <caret line="27" column="47" lean-forward="false" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1642#1651#0" expanded="true" />
           </folding>
         </state>
       </provider>

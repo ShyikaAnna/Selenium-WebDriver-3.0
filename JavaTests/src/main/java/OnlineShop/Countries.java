@@ -26,7 +26,6 @@ public class Countries {
     public boolean isCountryTab()
     {
         By CountryPage = By.xpath(countryPage);
-        //wait.until(ExpectedConditions.textToBePresentInElementLocated(CountryPage, "Countries"));
         return driver.findElement(CountryPage).isDisplayed();
     }
     public Boolean ListOfCountries() {

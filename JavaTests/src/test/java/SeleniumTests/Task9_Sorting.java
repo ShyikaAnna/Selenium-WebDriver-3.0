@@ -33,13 +33,11 @@ public class Task9_Sorting extends TestBase {
         driver.findElement(name("remember_me")).click();
         driver.findElement(xpath(".//*[@id='box-login']/form/div[2]/button")).click();
         driver.get("http://localhost/litecart/admin/?app=countries&doc=countries");
-       // countries.isCountryTab();
         Assert.assertTrue(countries.ListOfCountries());
     }
     @Test
     public void CountryZoneSorting()
     {
-        //Assert Assert = new Assert();
         driver.get("http://localhost/litecart/admin/?app=countries&doc=countries");
         countries.isCountryTab();
         ArrayList<Integer> countriesWithZone = countries.getCountriesWithZone();
