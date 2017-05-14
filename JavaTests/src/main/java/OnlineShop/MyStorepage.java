@@ -23,6 +23,8 @@ public class MyStorepage {
     private String productInPopular = "//*[@id='box-most-popular']/div/div";
     private String latestProducts = "//a[@href='#latest-products']";
     private String mainPage = "//img[@src='/litecart/images/slides/1-flying-cart.jpg']";
+    private String nameOfProduct = "//h1[@class='title']";
+    private String viewOfProduct = "//div[@id='view-full-page']/a";
 
     public boolean MainPage() {
         By mPage = By.xpath(mainPage);
@@ -47,5 +49,35 @@ public class MyStorepage {
         By Stikers = By.xpath(stiker);
         return (product.findElements(Stikers).size() == 1);
     }
-
+    public String getProductText()
+    {
+        goToCampaignProducts();
+        By lNameOfProduct = By.xpath(nameOfProduct);
+        String sNameOfProduct = driver.findElement(lNameOfProduct).getText();
+        System.out.println(sNameOfProduct);
+        return sNameOfProduct;
+    }
+    public void goToProductBlock()
+    {
+        By lNameOfProduct = By.xpath(nameOfProduct);
+        driver.findElement(lNameOfProduct).click();
+        By lViewOfProduct = By.xpath(viewOfProduct);
+        String driverName = driver.getClass().getSimpleName();
+        System.out.println(driverName);
+        if (driverName.equals("FirefoxDriver"))
+        {
+            try
+            {
+                wait.until(ExpectedConditions.elementToBeClickable(lViewOfProduct));
+            }
+            catch (Exception e)
+            {
+            }
+        }
+        if (driver.getCurrentUrl().equals("http://localhost/litecart/en/"))
+        {
+            driver.findElement(lViewOfProduct).click();
+            wait.until(ExpectedConditions.urlContains("duck"));
+        }
+    }
 }

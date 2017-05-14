@@ -1,7 +1,9 @@
 package SeleniumTests;
 
+
 import OnlineShop.MyStorepage;
-import org.junit.After;
+import OnlineShop.Product;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
@@ -9,11 +11,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
-import static org.junit.Assert.assertTrue;
-public class Task8_Stikers extends  TestBase {
+public class Task10_ProductPage {
     protected WebDriver driver;
     protected MyStorepage myStorepage;
-
+    protected Product product;
     @Before
     public void beforeClass()
     {
@@ -23,24 +24,12 @@ public class Task8_Stikers extends  TestBase {
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
     }
-
-
     @Test
-    public void LoginAndCheckStikers() {
-        myStorepage = new MyStorepage(driver);
-        driver.get("http://localhost/litecart/en/");
-        myStorepage.goToCampaignProducts();
-        int QuantityProductsInCampaign = myStorepage.QuantityProductsInCampaign();
-
-        for (int i = 1; i <= QuantityProductsInCampaign; i++)
-        {
-            assertTrue(myStorepage.checkStikerInCampaign(i));
-        }
-
-    }
-    @After
-    public void afterClass()
+    public void checkTextTest()
     {
-        driver.quit();
+        String textOnMainPage = myStorepage.getProductText();
+        myStorepage.goToProductBlock();
+        product.isProduct();
+        Assert.assertEquals(product.getProductName(), textOnMainPage);
     }
 }
