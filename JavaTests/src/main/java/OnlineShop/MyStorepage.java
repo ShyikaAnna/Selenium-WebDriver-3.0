@@ -15,6 +15,7 @@ public class MyStorepage {
         this.driver = driver;
         wait = new WebDriverWait(driver, 10);
     }
+    private String pageFlag = "//div[@id='rslides1_s0']/img";
     private String stiker = "//div[contains(@class,'sticker')]";
     private String compaignProducts = "//*[@id='content']/ul/li[1]/a";
     private String productInCampaign ="//div[@id='box-campaigns']//div[@class='product column shadow hover-light']";
@@ -25,7 +26,14 @@ public class MyStorepage {
     private String mainPage = "//img[@src='/litecart/images/slides/1-flying-cart.jpg']";
     private String nameOfProduct = "//h1[@class='title']";
     private String viewOfProduct = "//div[@id='view-full-page']/a";
+    private String regularPrice = "//div[@id='box-campaigns']//s[@class='regular-price']";
 
+    public boolean isMainPage()
+    {
+        By lPageFlag = By.xpath(pageFlag);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(lPageFlag));
+        return driver.findElement(lPageFlag).isDisplayed();
+    }
     public boolean MainPage() {
         By mPage = By.xpath(mainPage);
         wait.until(ExpectedConditions.visibilityOfElementLocated(mPage));
@@ -79,5 +87,13 @@ public class MyStorepage {
             driver.findElement(lViewOfProduct).click();
             wait.until(ExpectedConditions.urlContains("duck"));
         }
+    }
+    public String getRegularPrice()
+    {
+        goToCampaignProducts();
+        By lRegularPrice = By.xpath(regularPrice);
+        String sRegularPrice = driver.findElement(lRegularPrice).getText();
+        System.out.println(sRegularPrice);
+        return sRegularPrice;
     }
 }

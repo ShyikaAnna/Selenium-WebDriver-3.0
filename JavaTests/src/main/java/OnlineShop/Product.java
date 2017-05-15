@@ -36,5 +36,11 @@ public class Product {
         System.out.println(NameOfProducts);
         return NameOfProducts;
     }
-
+    public String getRegularPrice()
+    {
+        By lRegularPrice = By.xpath(regularPrice);
+        String sRegularPrice = driver.findElement(lRegularPrice).getText();
+        System.out.println(sRegularPrice);
+        return sRegularPrice;
+    }
 }
