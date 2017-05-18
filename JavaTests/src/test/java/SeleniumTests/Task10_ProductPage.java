@@ -21,13 +21,15 @@ public class Task10_ProductPage {
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
         driver.get("http://localhost/litecart");
-        myStorepage.isMainPage();
+        //myStorepage.isMainPage();
     }
     @Test
     public void checkTextTest()
     {
+        myStorepage = new MyStorepage(driver);
         String textOnMainPage = myStorepage.getProductText();
         myStorepage.goToProductBlock();
+        product = new Product(driver);
         product.isProduct();
         Assert.assertEquals(product.getProductName(), textOnMainPage);
     }
@@ -38,6 +40,54 @@ public class Task10_ProductPage {
         myStorepage.goToProductBlock();
         product.isProduct();
         Assert.assertEquals(product.getRegularPrice(), regularPriceOnMainPage);
+    }
+    @Test
+    public void checkCampaignPrice()
+    {
+        String campaignPriceOnMainPage = myStorepage.getCampaignPrice();
+        myStorepage.goToProductBlock();
+        product.isProduct();
+        Assert.assertEquals(product.getCampaignPrice(), campaignPriceOnMainPage);
+    }
+    @Test
+    public void checkRegularPriceColorOnMainPage()
+    {
+        Assert.assertTrue(myStorepage.checkRegularPriceColor());
+    }
+    @Test
+    public void checkRegularPriceColorOnProductBlock()
+    {
+        myStorepage.goToProductBlock();
+        Assert.assertTrue(product.checkRegularPriceColor());
+    }
+    @Test
+    public void checkCampaignPriceColorOnMainPage()
+    {
+        Assert.assertTrue(myStorepage.checkCampaignPriceColor());
+    }
+
+    @Test
+    public void checkCampaignPriceColorOnProductBlock()
+    {
+        myStorepage.goToProductBlock();
+        Assert.assertTrue(product.checkCampaignPriceColor());
+    }
+    @Test
+    public void checkBoldCampaignPriceOnMainPage()
+    {
+        Assert.assertTrue(myStorepage.checkBoldCampaignPrice());
+    }
+
+    @Test
+    public void checkBoldCampaignPriceOnProductBlock()
+    {
+        myStorepage.goToProductBlock();
+        Assert.assertTrue(product.checkBoldCampaignPrice());
+    }
+    @Test
+    public void compareCampaignAndRegularPricesOnMainPage()
+    {
+        Assert.assertTrue(myStorepage.compareCampaignAndRegularPrices());
     }
     @After
     public void afterClass()

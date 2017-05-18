@@ -1,6 +1,7 @@
 package SeleniumTests;
 
 import OnlineShop.Countries;
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -13,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 import static org.openqa.selenium.By.name;
 import static org.openqa.selenium.By.xpath;
 
-public class Task9_Sorting extends TestBase {
+public class Task9_Sorting {
     protected WebDriver driver;
     protected Countries countries;
     @Before
@@ -38,6 +39,7 @@ public class Task9_Sorting extends TestBase {
     @Test
     public void CountryZoneSorting()
     {
+        countries = new Countries(driver);
         driver.get("http://localhost/litecart/admin/?app=countries&doc=countries");
         countries.isCountryTab();
         ArrayList<Integer> countriesWithZone = countries.getCountriesWithZone();
@@ -51,5 +53,9 @@ public class Task9_Sorting extends TestBase {
         }
         Assert.assertTrue(countries.checkSortZones());
     }
-
+    @After
+    public void afterClass()
+    {
+        driver.quit();
+    }
 }

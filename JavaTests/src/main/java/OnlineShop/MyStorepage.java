@@ -1,6 +1,7 @@
 package OnlineShop;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -27,6 +28,7 @@ public class MyStorepage {
     private String nameOfProduct = "//h1[@class='title']";
     private String viewOfProduct = "//div[@id='view-full-page']/a";
     private String regularPrice = "//div[@id='box-campaigns']//s[@class='regular-price']";
+    private String campaignPrice = "//div[@id='box-campaigns']//strong[@class='campaign-price']";
 
     public boolean isMainPage()
     {
@@ -95,5 +97,80 @@ public class MyStorepage {
         String sRegularPrice = driver.findElement(lRegularPrice).getText();
         System.out.println(sRegularPrice);
         return sRegularPrice;
+    }
+    public String getCampaignPrice()
+    {
+        By CompaignPrice1 = By.xpath(campaignPrice);
+        String CompaignPrice = driver.findElement(CompaignPrice1).getText();
+        System.out.println(CompaignPrice);
+        return CompaignPrice;
+    }
+    public boolean checkRegularPriceColor()
+    {
+        goToCampaignProducts();
+        By lRegularPrice = By.xpath(regularPrice);
+        String sRegularPrice = driver.findElement(lRegularPrice).getCssValue("color");
+        sRegularPrice = sRegularPrice.substring((sRegularPrice.indexOf("(") + 1), sRegularPrice.lastIndexOf(")"));
+        System.out.println(sRegularPrice);
+        String[] strColor = sRegularPrice.split(",");
+        if (strColor[0].equals(strColor[1]) || strColor[1].equals(strColor[2]))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    public boolean checkCampaignPriceColor()
+    {
+        goToCampaignProducts();
+        By lCampaignPrice = By.xpath(campaignPrice);
+        String sCampaignPrice = driver.findElement(lCampaignPrice).getCssValue("color");
+        sCampaignPrice = sCampaignPrice.substring((sCampaignPrice.indexOf("(") + 1), sCampaignPrice.lastIndexOf(")"));
+        System.out.println(sCampaignPrice);
+        String[] strColor = sCampaignPrice.split(",");
+        if (Integer.parseInt(strColor[0]) != 0 || strColor[1].equals("0") || strColor[2].equals("0"))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    public boolean checkBoldCampaignPrice()
+    {
+        goToCampaignProducts();
+        By lCampaignPrice = By.xpath(campaignPrice);
+        String sCampaignPrice = driver.findElement(lCampaignPrice).getTagName();
+        System.out.println(sCampaignPrice);
+        if (sCampaignPrice.equals("b") || sCampaignPrice.equals("strong"))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    public boolean compareCampaignAndRegularPrices()
+    {
+        goToCampaignProducts();
+        By lCampaignPrice = By.xpath(campaignPrice);
+        Dimension sizeCampaignPrice = driver.findElement(lCampaignPrice).getSize();
+        By lRegularPrice = By.xpath(regularPrice);
+        Dimension sizeRegularPrice = driver.findElement(lRegularPrice).getSize();
+        System.out.println("sizeCampaignPrice - " + sizeCampaignPrice.getHeight() * sizeCampaignPrice.getWidth() + ". "
+                + "sizeRegularPrice - " + sizeRegularPrice.getWidth() * sizeRegularPrice.getHeight());
+        if (sizeCampaignPrice.getHeight() * sizeCampaignPrice.getWidth() > sizeRegularPrice.getWidth() * sizeRegularPrice
+                .getHeight())
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }
