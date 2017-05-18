@@ -23,6 +23,10 @@ public class Task9_Sorting {
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.manage().window().maximize();
+        driver.findElement(name("username")).sendKeys("admin");
+        driver.findElement(name("password")).sendKeys("admin");
+        driver.findElement(name("remember_me")).click();
+        driver.findElement(xpath(".//*[@id='box-login']/form/div[2]/button")).click();
     }
     @Test
     public void CountrySorting()
