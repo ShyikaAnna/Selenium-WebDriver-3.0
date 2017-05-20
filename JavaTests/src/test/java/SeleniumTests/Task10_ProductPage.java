@@ -2,11 +2,16 @@ package SeleniumTests;
 
 import OnlineShop.MyStorepage;
 import OnlineShop.Product;
-import org.junit.*;
+import org.junit.After;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Level;
 
 public class Task10_ProductPage {
     WebDriver driver;
@@ -19,9 +24,12 @@ public class Task10_ProductPage {
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.manage().deleteAllCookies();
+        ((RemoteWebDriver) driver).setLogLevel(Level.FINEST);
         driver.manage().window().maximize();
         driver.get("http://localhost/litecart");
-        //myStorepage.isMainPage();
+        myStorepage = new MyStorepage(driver);
+        product = new Product(driver);
+        myStorepage.isMainPage();
     }
     @Test
     public void checkTextTest()

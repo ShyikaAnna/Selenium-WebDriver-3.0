@@ -25,7 +25,7 @@ public class MyStorepage {
     private String productInPopular = "//*[@id='box-most-popular']/div/div";
     private String latestProducts = "//a[@href='#latest-products']";
     private String mainPage = "//img[@src='/litecart/images/slides/1-flying-cart.jpg']";
-    private String nameOfProduct = "//h1[@class='title']";
+    private String nameOfProduct = "//div[@id='box-campaigns']//div[@class='name']";
     private String viewOfProduct = "//div[@id='view-full-page']/a";
     private String regularPrice = "//div[@id='box-campaigns']//s[@class='regular-price']";
     private String campaignPrice = "//div[@id='box-campaigns']//strong[@class='campaign-price']";
