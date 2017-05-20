@@ -13,7 +13,7 @@ public class Countries {
     protected WebDriver driver;
     protected WebDriverWait wait;
     private String country = "//*[@id='main']/form/table//td[5]/a";
-    private String countryPage = "//*[@id='main']/h1";
+    private String countryPage = "//main[@id='main']/h1";
     private String numberOfZones = "//main[@id='main']//td[6]";
     private String countryRefTemplate = "//main[@id='main']//tr[%s]/td[5]/a";
     private String zonesRef = "//main[@id='main']//td[3]/input";
