@@ -37,14 +37,7 @@ public class Task9_Sorting {
     @Test
     public void CountrySorting()
     {
-        countries = new Countries(driver);
-
-//        driver.get("http://localhost/litecart/admin/");
-//        driver.findElement(name("username")).sendKeys("admin");
-//        driver.findElement(name("password")).sendKeys("admin");
-//        driver.findElement(name("remember_me")).click();
-//        driver.findElement(xpath(".//*[@id='box-login']/form/div[2]/button")).click();
-        driver.get("http://localhost/litecart/admin/?app=countries&doc=countries");
+       // countries = new Countries(driver);
         countries.isCountryTab();
         Assert.assertTrue(countries.ListOfCountries());
     }
