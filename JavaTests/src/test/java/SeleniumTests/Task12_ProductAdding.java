@@ -42,9 +42,9 @@ public class Task12_ProductAdding {
         catalogInformTab = new CatalogInformTab(driver);
         catalogPricesTab = new CatalogPricesTab(driver);
         String[] massive = {"[Root]", "Rubber Ducks"};
-        productAttributes = new ProductAttributes(true, massive, "Root", "Unisex", "2017-05-05", "2018-05-05", "code", "Ducks Family", "DF00543",
-                "GTIN00543", "TARIC00543", "30", "pcs", "0.3", "kg", "20", "20", "30", "cm", "3-5 days", "Sold out", "ducks.jpg",
-                "ACME Corp.", "-- Select --", "Duck", "Duck", "Ducks famely", "Instructions", "Ducks Family", "Buy duck",
+        productAttributes = new ProductAttributes(true, massive, "Root", "Unisex", "2017-05-24", "2018-05-24", "code", "Duck for baby", "DF00543",
+                "GTIN00543", "TARIC00543", "30", "pcs", "0.3", "kg", "20", "20", "30", "cm", "3-5 days", "Sold out", "penguin.jpg",
+                "ACME Corp.", "-- Select --", "Duck", "Duck", "Toy for bathroom", "Instructions", "penguin", "Buy duck",
                 "30", "US Dollars", "-- Select --", "30", "33");
         System.out.println(productAttributes.toString());
     }
