@@ -4,7 +4,6 @@ import OnlineShop.Cart;
 import OnlineShop.MyStorepage;
 import OnlineShop.Product;
 import org.junit.After;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
@@ -13,6 +12,8 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
+
+import static org.junit.Assert.assertTrue;
 
 public class Task13_Add_Delete_In_Cart {
     protected WebDriver driver;
@@ -31,6 +32,7 @@ public class Task13_Add_Delete_In_Cart {
         myStorepage = new MyStorepage(driver);
         product = new Product(driver);
         cart = new Cart(driver);
+        driver.get("http://localhost/litecart");
     }
 
     @Test
@@ -45,7 +47,7 @@ public class Task13_Add_Delete_In_Cart {
             product.selectSize();
             int ducksInCart = product.getDucksInCart();
             product.addToCart();
-            Assert.assertTrue(product.isIncreasingDucks(ducksInCart));
+            assertTrue(product.isIncreasingDucks(ducksInCart));
         }
     }
 
@@ -56,7 +58,7 @@ public class Task13_Add_Delete_In_Cart {
         cart.isCartBlock();
         int ducksInCart = cart.getDucksInCart();
         cart.deleteOneDuck();
-        Assert.assertTrue(cart.isDecreasingDucks(ducksInCart));
+        assertTrue(cart.isDecreasingDucks(ducksInCart));
     }
 
     @Test
@@ -66,9 +68,49 @@ public class Task13_Add_Delete_In_Cart {
         {
             int ducksInCart = cart.getDucksInCart();
             cart.deleteOneDuck();
-            Assert.assertTrue(cart.isDecreasingDucks(ducksInCart));
+            assertTrue(cart.isDecreasingDucks(ducksInCart));
         }
     }
+    @Test
+    public void addToCartDeleteFromCartTest()
+    {
+        myStorepage.isMainPage();
+        myStorepage.goToProductBlock();
+        product.isProduct();
+        product.selectSize();
+        int ducksIn = product.getDucksInCart();
+        product.addToCart();
+        assertTrue(product.isIncreasingDucks(ducksIn));
+
+        driver.get("http://localhost/litecart");
+        myStorepage.clickPopularProducts();
+        myStorepage.goToProductBlockPopular();
+        product.isProduct();
+        product.selectSize();
+        ducksIn = product.getDucksInCart();
+        product.addToCart();
+        product.isIncreasingDucks(ducksIn);
+        assertTrue(product.isIncreasingDucks(ducksIn));
+
+        driver.get("http://localhost/litecart");
+        myStorepage.clickLatestProducts();
+        myStorepage.goToProductBlockLatest();
+        product.isProduct();
+        product.selectSize();
+        ducksIn = product.getDucksInCart();
+        product.addToCart();
+        product.isIncreasingDucks(ducksIn);
+        assertTrue(product.isIncreasingDucks(ducksIn));
+
+        product.goToCart();
+        cart.isCartBlock();
+        for (int i = 0; i < cart.getNumberOfDuckKind() - 1; i++)
+        {
+            assertTrue(cart.deleteOneKindDuck());
+        }
+        assertTrue(cart.deleteLastKindDuck());
+    }
+
 
     @After
     public void afterClass()

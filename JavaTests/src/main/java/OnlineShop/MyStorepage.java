@@ -181,6 +181,11 @@ public class MyStorepage extends Base {
         driver.findElement(lPopularProducts).click();
         wait.until(ExpectedConditions.attributeContains(lPopularProducts, "class", "active"));
     }
+    public int getProductsInPopular()
+    {
+        By lProductsInPopular = By.xpath(productInPopular);
+        return driver.findElements(lProductsInPopular).size();
+    }
     public void goToProductBlockPopular()
     {
         By lNameOfProductPopular = By.xpath(nameOfProductPopular);
