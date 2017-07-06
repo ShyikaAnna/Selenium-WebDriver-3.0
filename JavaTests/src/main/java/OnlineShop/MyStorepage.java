@@ -5,17 +5,17 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class MyStorepage {
-    protected WebDriver driver;
-    protected WebDriverWait wait;
+public class MyStorepage extends Base {
+    public MyStorepage(PageInitialization pageInitialization) {
+        super(pageInitialization);
+    }
 
     public MyStorepage(WebDriver driver)
     {
-        this.driver = driver;
-        wait = new WebDriverWait(driver, 10);
+        super(driver);
     }
+
     private String pageFlag = "//div[@id='rslides1_s0']/img";
     private String stiker = "//div[contains(@class,'sticker')]";
     private String compaignProducts = "//*[@id='content']/ul/li[1]/a";
@@ -29,6 +29,8 @@ public class MyStorepage {
     private String viewOfProduct = "//div[@id='view-full-page']/a";
     private String regularPrice = "//div[@id='box-campaigns']//s[@class='regular-price']";
     private String campaignPrice = "//div[@id='box-campaigns']//strong[@class='campaign-price']";
+    private String nameOfProductLatest = "//div[@id='box-latest-products']//div[@class='name']";
+    private String nameOfProductPopular = "//div[@id='box-popular-products']//div[@class='name']";
 
     public boolean isMainPage()
     {
@@ -171,6 +173,64 @@ public class MyStorepage {
         else
         {
             return false;
+        }
+    }
+    public void clickPopularProducts()
+    {
+        By lPopularProducts = By.xpath(popularProducts);
+        driver.findElement(lPopularProducts).click();
+        wait.until(ExpectedConditions.attributeContains(lPopularProducts, "class", "active"));
+    }
+    public void goToProductBlockPopular()
+    {
+        By lNameOfProductPopular = By.xpath(nameOfProductPopular);
+        driver.findElement(lNameOfProductPopular).click();
+        By lViewOfProduct = By.xpath(viewOfProduct);
+        String driverName = driver.getClass().getSimpleName();
+        System.out.println(driverName);
+        if (driverName.equals("FirefoxDriver"))
+        {
+            try
+            {
+                wait.until(ExpectedConditions.elementToBeClickable(lViewOfProduct));
+            }
+            catch (Exception e)
+            {
+            }
+        }
+        if (driver.getCurrentUrl().equals("http://localhost/litecart/en/"))
+        {
+            driver.findElement(lViewOfProduct).click();
+            wait.until(ExpectedConditions.urlContains("duck"));
+        }
+    }
+    public void clickLatestProducts()
+    {
+        By lLatestProducts = By.xpath(latestProducts);
+        driver.findElement(lLatestProducts).click();
+        wait.until(ExpectedConditions.attributeContains(lLatestProducts, "class", "active"));
+    }
+    public void goToProductBlockLatest()
+    {
+        By lNameOfProductLatest = By.xpath(nameOfProductLatest);
+        driver.findElement(lNameOfProductLatest).click();
+        By lViewOfProduct = By.xpath(viewOfProduct);
+        String driverName = driver.getClass().getSimpleName();
+        System.out.println(driverName);
+        if (driverName.equals("FirefoxDriver"))
+        {
+            try
+            {
+                wait.until(ExpectedConditions.elementToBeClickable(lViewOfProduct));
+            }
+            catch (Exception e)
+            {
+            }
+        }
+        if (driver.getCurrentUrl().equals("http://localhost/litecart/en/"))
+        {
+            driver.findElement(lViewOfProduct).click();
+            wait.until(ExpectedConditions.urlContains("duck"));
         }
     }
 }

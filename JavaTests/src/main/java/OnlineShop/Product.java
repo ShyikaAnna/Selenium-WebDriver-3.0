@@ -1,19 +1,28 @@
 package OnlineShop;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.Select;
 
-public class Product {
-    protected WebDriver driver;
-    protected WebDriverWait wait;
+public class Product extends Base{
+    public Product(PageInitialization pageInitialization)
+    {
+        super(pageInitialization);
+    }
 
     public Product(WebDriver driver)
     {
-        this.driver = driver;
-        wait = new WebDriverWait(driver, 10);
+        super(driver);
     }
+//
+//    public Product(WebDriver driver)
+//    {
+//        this.driver = driver;
+//        wait = new WebDriverWait(driver, 10);
+//    }
     private String pageFlag = "//h1[@class='title']";
     private String nameOfProduct = "//h1[@class='title']";
     private String regularPrice = "//del[@class='regular-price']";
@@ -95,6 +104,50 @@ public class Product {
         {
             return false;
         }
+    }
+    public void selectSize()
+    {
+        try
+        {
+            By lPackageSize = By.xpath(packageSize);
+            WebElement element = driver.findElement(lPackageSize);
+            new Select(element).selectByValue("Small");
+        }
+        catch (NoSuchElementException e)
+        {
+        }
+    }
+
+    public int getDucksInCart()
+    {
+        By lQuantityDucksInCart = By.xpath(quantityDucksInCart);
+        return Integer.parseInt(driver.findElement(lQuantityDucksInCart).getText());
+    }
+
+    public void addToCart()
+    {
+        By lBtnAddCartProduct = By.xpath(btnAddCartProduct);
+        driver.findElement(lBtnAddCartProduct).click();
+    }
+
+    public boolean isIncreasingDucks(int ducksInCart)
+    {
+        try
+        {
+            By lQuantityDucksInCart = By.xpath(quantityDucksInCart);
+            wait.until(ExpectedConditions.textToBePresentInElementLocated(lQuantityDucksInCart, "" + (ducksInCart + 1)));
+            return true;
+        }
+        catch (Exception e)
+        {
+            return false;
+        }
+    }
+
+    public void goToCart()
+    {
+        By lGoToCart = By.xpath(goToCart);
+        driver.findElement(lGoToCart).click();
     }
 
 }
