@@ -26,7 +26,7 @@ public class Cart extends Base{
     private By lUpdateCartItem;
 
     private String thereAreNoItemsInYourCart = "//div[@id='box-checkout']//p/em";
-    private String pageFlag = "//div[@id='box-checkout-cart']/h2";
+    private String pageFlag = "//div[@id='box-checkout-cart']";
     private String tableFlag = "//div[@id='order_confirmation-wrapper']//tbody/tr[1]/td[2]";
     private String deleteButton = "//div[@id='box-checkout-cart']//button[@class='btn btn-danger']";
 

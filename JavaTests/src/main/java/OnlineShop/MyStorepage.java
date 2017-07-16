@@ -16,21 +16,22 @@ public class MyStorepage extends Base {
         super(driver);
     }
 
-    private String pageFlag = "//div[@id='rslides1_s0']/img";
+    private String pageFlag = "//*[@id='rslides1_s0']/a/img";
     private String stiker = "//div[contains(@class,'sticker')]";
     private String compaignProducts = "//*[@id='content']/ul/li[1]/a";
     private String productInCampaign ="//div[@id='box-campaigns']//div[@class='product column shadow hover-light']";
     private String ProductInCampaignLink=  "//div[@id='box-campaigns']/div/div";
-    private String popularProducts = "//a[@href='#popular-products']";
-    private String productInPopular = "//*[@id='box-most-popular']/div/div";
-    private String latestProducts = "//a[@href='#latest-products']";
+    private String popularProducts = "//h3[contains(.,'Most Popular')]";
+    private String productInPopular = ".//*[@id='box-most-popular']/div/div";
+    private String productInCampaignLink = "//div[@id='box-most-popular']/div/div";
+    private String latestProducts = ".//*[@id='box-latest-products']/div/ul/li/a";
     private String mainPage = "//img[@src='/litecart/images/slides/1-flying-cart.jpg']";
-    private String nameOfProduct = "//div[@id='box-campaigns']//div[@class='name']";
+    private String nameOfProduct = ".//div[@id='box-campaigns']//div[@class='name']";
     private String viewOfProduct = "//div[@id='view-full-page']/a";
     private String regularPrice = "//div[@id='box-campaigns']//s[@class='regular-price']";
     private String campaignPrice = "//div[@id='box-campaigns']//strong[@class='campaign-price']";
     private String nameOfProductLatest = "//div[@id='box-latest-products']//div[@class='name']";
-    private String nameOfProductPopular = "//div[@id='box-popular-products']//div[@class='name']";
+    private String nameOfProductPopular = ".//*[@id='box-most-popular']/div/ul/li[3]/a[1]";
 
     public boolean isMainPage()
     {
@@ -179,7 +180,7 @@ public class MyStorepage extends Base {
     {
         By lPopularProducts = By.xpath(popularProducts);
         driver.findElement(lPopularProducts).click();
-        wait.until(ExpectedConditions.attributeContains(lPopularProducts, "class", "active"));
+//        wait.until(ExpectedConditions.attributeContains(lPopularProducts, "class", "active"));
     }
     public int getProductsInPopular()
     {
@@ -213,7 +214,6 @@ public class MyStorepage extends Base {
     {
         By lLatestProducts = By.xpath(latestProducts);
         driver.findElement(lLatestProducts).click();
-        wait.until(ExpectedConditions.attributeContains(lLatestProducts, "class", "active"));
     }
     public void goToProductBlockLatest()
     {

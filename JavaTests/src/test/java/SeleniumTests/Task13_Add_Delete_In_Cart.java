@@ -36,45 +36,8 @@ public class Task13_Add_Delete_In_Cart {
     }
 
     @Test
-    public void putFirstDuckTest()
-    {
-        for (int i = 0; i < 3; i++)
-        {
-            driver.get("http://localhost/litecart");
-            myStorepage.isMainPage();
-            myStorepage.goToProductBlock();
-            product.isProduct();
-            product.selectSize();
-            int ducksInCart = product.getDucksInCart();
-            product.addToCart();
-            assertTrue(product.isIncreasingDucks(ducksInCart));
-        }
-    }
-
-    @Test
-    public void deleteFirstDuck()
-    {
-        product.goToCart();
-        cart.isCartBlock();
-        int ducksInCart = cart.getDucksInCart();
-        cart.deleteOneDuck();
-        assertTrue(cart.isDecreasingDucks(ducksInCart));
-    }
-
-    @Test
-    public void deleteSecondDuck()
-    {
-        for (int i = 0; i < 2; i++)
-        {
-            int ducksInCart = cart.getDucksInCart();
-            cart.deleteOneDuck();
-            assertTrue(cart.isDecreasingDucks(ducksInCart));
-        }
-    }
-    @Test
     public void addToCartDeleteFromCartTest()
     {
-        myStorepage.isMainPage();
         myStorepage.goToProductBlock();
         product.isProduct();
         product.selectSize();
@@ -94,7 +57,6 @@ public class Task13_Add_Delete_In_Cart {
 
         driver.get("http://localhost/litecart");
         myStorepage.clickLatestProducts();
-        myStorepage.goToProductBlockLatest();
         product.isProduct();
         product.selectSize();
         ducksIn = product.getDucksInCart();
@@ -108,7 +70,6 @@ public class Task13_Add_Delete_In_Cart {
         {
             assertTrue(cart.deleteOneKindDuck());
         }
-        assertTrue(cart.deleteLastKindDuck());
     }
 
 
