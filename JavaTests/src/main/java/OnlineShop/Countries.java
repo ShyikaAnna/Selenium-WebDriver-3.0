@@ -8,15 +8,18 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class Countries {
     protected WebDriver driver;
     protected WebDriverWait wait;
-    private String country = "//*[@id='main']/form/table//td[5]/a";
-    private String countryPage = "//main[@id='main']/h1";
+    private String country = "//span[contains(.,'Countries')]";
+    private String countryPage = ".//h1[contains(.,'Countries')]";
     private String numberOfZones = "//main[@id='main']//td[6]";
-    private String countryRefTemplate = "//main[@id='main']//tr[%s]/td[5]/a";
+    private String countriesRef = "//*[@id='content']/form/table/tbody//td[5]";
+    private String countryRefTemplate = ".//*[@id='content']/form/table/tbody/tr[%s]/td[5]/a";
     private String zonesRef = "//main[@id='main']//td[3]/input";
+
 
     public Countries(WebDriver driver)
     {
@@ -82,5 +85,10 @@ public class Countries {
             }
         }
         return true;
+    }
+    public void goToSomeCountry()
+    {
+        By lCountriesRef = By.xpath(countriesRef);
+        goToCountry(new Random().nextInt(driver.findElements(lCountriesRef).size()));
     }
 }

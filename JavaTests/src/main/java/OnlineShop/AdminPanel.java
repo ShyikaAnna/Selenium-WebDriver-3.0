@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class AdminPanel {
     protected WebDriver driver;
     protected WebDriverWait wait;
-    private String search = "//input[@name='query']";
+    private String search = "//div[@id='box-apps-menu-wrapper']";
     private String itemsMenu = "//li[@id='app-']/a";
     private String itemMenuLinkTemplate = "//ul[@id='box-apps-menu']/li[%s]/a";
     private String catalogItemMenu = "//span[contains(.,'Catalog')]";

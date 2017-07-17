@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e816e2ca-6057-425e-aa24-d6e2287da06c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/OnlineShop/EditCountriesBlock.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/SeleniumTests/Task14New_Window.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/OnlineShop/Cart.java" afterPath="$PROJECT_DIR$/src/main/java/OnlineShop/Cart.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/OnlineShop/MyStorepage.java" afterPath="$PROJECT_DIR$/src/main/java/OnlineShop/MyStorepage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/SeleniumTests/Task13_Add_Delete_In_Cart.java" afterPath="$PROJECT_DIR$/src/test/java/SeleniumTests/Task13_Add_Delete_In_Cart.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/OnlineShop/AdminPanel.java" afterPath="$PROJECT_DIR$/src/main/java/OnlineShop/AdminPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/OnlineShop/Countries.java" afterPath="$PROJECT_DIR$/src/main/java/OnlineShop/Countries.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -86,18 +87,20 @@
       <file leaf-file-name="MyStorepage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/OnlineShop/MyStorepage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3434">
-              <caret line="220" column="0" lean-forward="false" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="34">
+              <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Task13_Add_Delete_In_Cart.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Task13_Add_Delete_In_Cart.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/SeleniumTests/Task13_Add_Delete_In_Cart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+            <state relative-caret-position="170">
+              <caret line="23" column="29" lean-forward="false" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,33 +111,87 @@
       <file leaf-file-name="Task8_Stikers.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/SeleniumTests/Task8_Stikers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="34">
+              <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#1222#1223#0" expanded="false" />
-                <element signature="e#1251#1252#0" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cart.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/OnlineShop/Cart.java">
+      <file leaf-file-name="Task10_ProductPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SeleniumTests/Task10_ProductPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="28" column="61" lean-forward="false" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
+            <state relative-caret-position="34">
+              <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Task14New_Window.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SeleniumTests/Task14New_Window.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="106">
+              <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Countries.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/OnlineShop/Countries.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-251">
+              <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Product.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/OnlineShop/Product.java">
+      <file leaf-file-name="FirstTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SeleniumTests/FirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1462">
-              <caret line="25" column="53" lean-forward="false" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+            <state relative-caret-position="102">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LiteCartShop.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SeleniumTests/LiteCartShop.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="31" column="26" lean-forward="false" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminPanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/OnlineShop/AdminPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="10" column="63" lean-forward="false" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EditCountriesBlock.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/OnlineShop/EditCountriesBlock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="66" column="55" lean-forward="false" selection-start-line="66" selection-start-column="55" selection-end-line="66" selection-end-column="68" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -452,7 +509,6 @@
         <option value="D:/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java" />
         <option value="$PROJECT_DIR$/src/test/java/SeleniumTests/Task8_Stikers.java" />
         <option value="$PROJECT_DIR$/src/test/java/SeleniumTests/Task10_ProductPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/OnlineShop/Countries.java" />
         <option value="$PROJECT_DIR$/src/main/java/OnlineShop/UserData.java" />
         <option value="$PROJECT_DIR$/src/test/java/SeleniumTests/Task9_Sorting.java" />
         <option value="$PROJECT_DIR$/src/main/java/OnlineShop/Login.java" />
@@ -461,7 +517,6 @@
         <option value="$PROJECT_DIR$/src/main/java/OnlineShop/CatalogInformTab.java" />
         <option value="$PROJECT_DIR$/src/main/java/OnlineShop/Catalog.java" />
         <option value="$PROJECT_DIR$/src/main/java/OnlineShop/CatalogPricesTab.java" />
-        <option value="$PROJECT_DIR$/src/main/java/OnlineShop/AdminPanel.java" />
         <option value="$PROJECT_DIR$/src/main/java/OnlineShop/ProductAttributes.java" />
         <option value="$PROJECT_DIR$/src/test/java/SeleniumTests/Task12_ProductAdding.java" />
         <option value="$PROJECT_DIR$/src/main/java/OnlineShop/Page_Initialization.java" />
@@ -473,6 +528,10 @@
         <option value="$PROJECT_DIR$/src/main/java/OnlineShop/MyStorepage.java" />
         <option value="$PROJECT_DIR$/src/main/java/OnlineShop/Cart.java" />
         <option value="$PROJECT_DIR$/src/test/java/SeleniumTests/Task13_Add_Delete_In_Cart.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SeleniumTests/Task14New_Window.java" />
+        <option value="$PROJECT_DIR$/src/main/java/OnlineShop/AdminPanel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/OnlineShop/Countries.java" />
+        <option value="$PROJECT_DIR$/src/main/java/OnlineShop/EditCountriesBlock.java" />
       </list>
     </option>
   </component>
@@ -496,9 +555,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -522,36 +578,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JavaTests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JavaTests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SeleniumTests" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -601,6 +627,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -628,33 +657,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Task13_Add_Delete_In_Cart">
-    <configuration default="false" name="Task12_ProductAdding.addingOfProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="SeleniumTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="JavaTests_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="SeleniumTests" />
-      <option name="MAIN_CLASS_NAME" value="SeleniumTests.Task12_ProductAdding" />
-      <option name="METHOD_NAME" value="addingOfProduct" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.Task14New_Window">
     <configuration default="false" name="Task13_Add_Delete_In_Cart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -747,6 +750,32 @@
       <option name="MAIN_CLASS_NAME" value="SeleniumTests.Task13_Add_Delete_In_Cart" />
       <option name="METHOD_NAME" value="addToCartDeleteFromCartTest" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="Task14New_Window" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="SeleniumTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="JavaTests_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="SeleniumTests" />
+      <option name="MAIN_CLASS_NAME" value="SeleniumTests.Task14New_Window" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -936,19 +965,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.FirstTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.Task12_ProductAdding.addingOfProduct" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.Task13_Add_Delete_In_Cart" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.Task13_Add_Delete_In_Cart.putFirstDuckTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.Task13_Add_Delete_In_Cart.deleteFirstDuck" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.Task13_Add_Delete_In_Cart.addToCartDeleteFromCartTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.Task13_Add_Delete_In_Cart" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.Task13_Add_Delete_In_Cart.putFirstDuckTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.Task13_Add_Delete_In_Cart.deleteFirstDuck" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.Task13_Add_Delete_In_Cart.addToCartDeleteFromCartTest" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.Task14New_Window" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.Task13_Add_Delete_In_Cart" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.Task13_Add_Delete_In_Cart.addToCartDeleteFromCartTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.Task13_Add_Delete_In_Cart.putFirstDuckTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.Task13_Add_Delete_In_Cart.deleteFirstDuck" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.Task12_ProductAdding.addingOfProduct" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.Task14New_Window" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.Task13_Add_Delete_In_Cart" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.Task13_Add_Delete_In_Cart.addToCartDeleteFromCartTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.Task13_Add_Delete_In_Cart.putFirstDuckTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.Task13_Add_Delete_In_Cart.deleteFirstDuck" />
       </list>
     </recent_temporary>
   </component>
@@ -966,35 +995,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Task13_Add_Delete_In_Cart - 2017.07.16 at 14h 48m 43s.xml">
+    <history-entry file="Task13_Add_Delete_In_Cart - 2017.07.16 at 17h 36m 45s.xml">
       <configuration name="Task13_Add_Delete_In_Cart" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Task13_Add_Delete_In_Cart - 2017.07.16 at 14h 51m 48s.xml">
-      <configuration name="Task13_Add_Delete_In_Cart" configurationId="JUnit" />
+    <history-entry file="Task14New_Window - 2017.07.16 at 17h 37m 31s.xml">
+      <configuration name="Task14New_Window" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Task13_Add_Delete_In_Cart - 2017.07.16 at 15h 06m 58s.xml">
-      <configuration name="Task13_Add_Delete_In_Cart" configurationId="JUnit" />
+    <history-entry file="Task14New_Window - 2017.07.16 at 17h 41m 06s.xml">
+      <configuration name="Task14New_Window" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Task13_Add_Delete_In_Cart - 2017.07.16 at 15h 09m 58s.xml">
-      <configuration name="Task13_Add_Delete_In_Cart" configurationId="JUnit" />
+    <history-entry file="Task14New_Window - 2017.07.17 at 05h 52m 12s.xml">
+      <configuration name="Task14New_Window" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Task13_Add_Delete_In_Cart - 2017.07.16 at 15h 55m 04s.xml">
-      <configuration name="Task13_Add_Delete_In_Cart" configurationId="JUnit" />
+    <history-entry file="Task14New_Window - 2017.07.17 at 06h 00m 44s.xml">
+      <configuration name="Task14New_Window" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Task13_Add_Delete_In_Cart - 2017.07.16 at 15h 57m 02s.xml">
-      <configuration name="Task13_Add_Delete_In_Cart" configurationId="JUnit" />
+    <history-entry file="Task14New_Window - 2017.07.17 at 06h 06m 53s.xml">
+      <configuration name="Task14New_Window" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Task13_Add_Delete_In_Cart - 2017.07.16 at 16h 08m 07s.xml">
-      <configuration name="Task13_Add_Delete_In_Cart" configurationId="JUnit" />
+    <history-entry file="Task14New_Window - 2017.07.17 at 06h 10m 29s.xml">
+      <configuration name="Task14New_Window" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Task13_Add_Delete_In_Cart - 2017.07.16 at 16h 14m 04s.xml">
-      <configuration name="Task13_Add_Delete_In_Cart" configurationId="JUnit" />
+    <history-entry file="Task14New_Window - 2017.07.17 at 06h 16m 35s.xml">
+      <configuration name="Task14New_Window" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Task13_Add_Delete_In_Cart_putFirstDuckTest - 2017.07.06 at 22h 32m 31s.xml">
-      <configuration name="Task13_Add_Delete_In_Cart.putFirstDuckTest" configurationId="JUnit" />
+    <history-entry file="Task14New_Window - 2017.07.17 at 06h 21m 37s.xml">
+      <configuration name="Task14New_Window" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Task13_Add_Delete_In_Cart_putFirstDuckTest - 2017.07.06 at 22h 42m 30s.xml">
-      <configuration name="Task13_Add_Delete_In_Cart.putFirstDuckTest" configurationId="JUnit" />
+    <history-entry file="Task14New_Window - 2017.07.17 at 06h 24m 00s.xml">
+      <configuration name="Task14New_Window" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -1017,16 +1046,16 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5121029" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291367" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24496645" sideWeight="0.48789713" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24496645" sideWeight="0.48789713" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14854518" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15084226" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13842663" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37751678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37751678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1113,20 +1142,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/SeleniumTests/TestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/Runnable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="67" column="25" lean-forward="false" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SeleniumTests/LiteCartShop.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1257,13 +1272,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SeleniumTests/LiteCartShop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="16" column="49" lean-forward="false" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/ProcessImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1271,31 +1279,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SeleniumTests/FirstTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SeleniumTests/Task7_Sidebar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/OnlineShop/Countries.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="27" column="47" lean-forward="false" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SeleniumTests/Task10_ProductPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="32" column="5" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="32" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1331,10 +1318,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="27" column="55" lean-forward="false" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="75" />
-          <folding>
-            <element signature="e#2586#2587#0" expanded="false" />
-            <element signature="e#2615#2616#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1372,13 +1355,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/OnlineShop/AdminPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SeleniumTests/Task12_ProductAdding.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1390,6 +1366,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="30" column="71" lean-forward="false" selection-start-line="30" selection-start-column="71" selection-end-line="30" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1397,9 +1376,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1414,19 +1390,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="22" column="6" lean-forward="false" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#928#929#0" expanded="false" />
-            <element signature="e#957#958#0" expanded="false" />
-            <element signature="e#1856#1857#0" expanded="false" />
-            <element signature="e#1913#1914#0" expanded="false" />
-            <element signature="e#1959#1960#0" expanded="false" />
-            <element signature="e#2006#2007#0" expanded="false" />
-            <element signature="e#2146#2147#0" expanded="false" />
-            <element signature="e#2195#2196#0" expanded="false" />
-            <element signature="e#2242#2243#0" expanded="false" />
-            <element signature="e#2290#2291#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1434,18 +1397,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SeleniumTests/Task8_Stikers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1222#1223#0" expanded="false" />
-            <element signature="e#1251#1252#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1460,15 +1411,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1462">
           <caret line="25" column="53" lean-forward="false" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/OnlineShop/MyStorepage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3434">
-          <caret line="220" column="0" lean-forward="false" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1476,14 +1418,95 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="28" column="61" lean-forward="false" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SeleniumTests/FirstTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/OnlineShop/MyStorepage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SeleniumTests/LiteCartShop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="31" column="26" lean-forward="false" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SeleniumTests/Task13_Add_Delete_In_Cart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+        <state relative-caret-position="170">
+          <caret line="23" column="29" lean-forward="false" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SeleniumTests/Task8_Stikers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SeleniumTests/Task10_ProductPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/OnlineShop/AdminPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="63" lean-forward="false" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/OnlineShop/Countries.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-251">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SeleniumTests/Task14New_Window.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/OnlineShop/EditCountriesBlock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="66" column="55" lean-forward="false" selection-start-line="66" selection-start-column="55" selection-end-line="66" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
