@@ -1,8 +1,8 @@
 package SeleniumTests;
 
 import OnlineShop.AdminPanel;
-import OnlineShop.Countries;
-import OnlineShop.EditCountriesBlock;
+import OnlineShop.Category1Block;
+import OnlineShop.EditProductBlock;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -11,18 +11,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 
-public class Task14New_Window {
+public class Logging {
     protected WebDriver driver;
-    protected AdminPanel adminPanelLogin;
     protected AdminPanel adminPanel;
-    protected EditCountriesBlock editCountriesBlock;
-    protected Countries countries;
-    protected WebDriverWait wait;
+    protected Category1Block category1Block;
+    protected EditProductBlock editProductBlock;
 
     @Before
     public void beforeClass()
@@ -33,31 +30,32 @@ public class Task14New_Window {
         driver.manage().deleteAllCookies();
         ((RemoteWebDriver) driver).setLogLevel(Level.FINEST);
         driver.manage().window().maximize();
-        adminPanelLogin = new AdminPanel(driver);
         adminPanel = new AdminPanel(driver);
-        editCountriesBlock = new EditCountriesBlock(driver);
-        countries = new Countries(driver);
+        category1Block = new Category1Block(driver);
+        editProductBlock = new EditProductBlock(driver);
+    }
+
+    @Test
+    public void checkLogs()
+    {
         driver.get("http://localhost/litecart/admin/");
         driver.findElement(By.name("username")).sendKeys("admin");
         driver.findElement(By.name("password")).sendKeys("admin");
         driver.findElement(By.name("remember_me")).click();
         driver.findElement(By.xpath(".//*[@id='box-login']/form/div[2]/button")).click();
-//        wait.until(ExpectedConditions.elementToBeClickable(By.id("sidebar")));
-    }
-
-    @Test
-    public void checkWindows()
-    {
         adminPanel.isAdminPanel();
-        driver.get("http://localhost/litecart/admin/?app=countries&doc=countries");
-        countries.isCountryTab();
-        countries.goToSomeCountry();
-        editCountriesBlock.isEditCountriesBlock();
-        for (int i = 0; i < editCountriesBlock.countLinks(); i++)
+
+        driver.get(" http://localhost/litecart/admin/?app=catalog&doc=catalog&category_id=1");
+        category1Block.isCategory1Block();
+        category1Block.openAllFolders();
+        for (int i = 0; i < category1Block.countLinks(); i++)
         {
-            Assert.assertTrue(editCountriesBlock.checkWindow(i));
+            category1Block.goToEditProduct(i);
+            editProductBlock.isEditProductBlock();
+            Assert.assertFalse(editProductBlock.checkLog());
+            driver.navigate().back();
+            category1Block.isCategory1Block();
         }
-//        Assert.assertAll();
     }
 
     @After
