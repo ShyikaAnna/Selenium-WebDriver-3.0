@@ -26,12 +26,12 @@ public class MyStorepage extends Base {
     private String productInCampaignLink = "//div[@id='box-most-popular']/div/div";
     private String latestProducts = ".//*[@id='box-latest-products']/div/ul/li/a";
     private String mainPage = "//img[@src='/litecart/images/slides/1-flying-cart.jpg']";
-    private String nameOfProduct = ".//div[@id='box-campaigns']//div[@class='name']";
-    private String viewOfProduct = "//div[@id='view-full-page']/a";
+    private String nameOfProduct = ".//*[@id='box-campaigns']/div/ul/li";
+    private String viewOfProduct = ".//*[@id='box-product']/div[2]/div[1]/a";
     private String regularPrice = "//div[@id='box-campaigns']//s[@class='regular-price']";
     private String campaignPrice = "//div[@id='box-campaigns']//strong[@class='campaign-price']";
-    private String nameOfProductLatest = "//div[@id='box-latest-products']//div[@class='name']";
-    private String nameOfProductPopular = ".//*[@id='box-most-popular']/div/ul/li[3]/a[1]";
+    private String nameOfProductLatest = ".//*[@id='box-latest-products']/div/ul/li/a[1]";
+    private String nameOfProductPopular = "//*[@id='box-most-popular']/div/ul/li[3]/a[1]";
 
     public boolean isMainPage()
     {

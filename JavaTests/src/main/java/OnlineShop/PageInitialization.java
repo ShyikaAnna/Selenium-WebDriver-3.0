@@ -55,7 +55,7 @@ public class PageInitialization {
     public void addDuckFromLatestBlockToCart()
     {
         goToMainPage();
-        myStorepage.clickLatestProducts();
+        //myStorepage.clickLatestProducts();
         myStorepage.goToProductBlockLatest();
         addOneDuck();
     }
