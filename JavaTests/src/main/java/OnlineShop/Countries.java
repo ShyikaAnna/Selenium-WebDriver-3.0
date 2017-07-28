@@ -14,8 +14,8 @@ public class Countries {
     protected WebDriver driver;
     protected WebDriverWait wait;
     private String country = "//span[contains(.,'Countries')]";
-    private String countryPage = ".//h1[contains(.,'Countries')]";
-    private String numberOfZones = "//main[@id='main']//td[6]";
+    private String pageFlag = "//h1[contains(.,'Countries')]";
+    private String numberOfZones = "//*[@id='content']/form/table/tbody/tr/td[6]";
     private String countriesRef = "//*[@id='content']/form/table/tbody//td[5]";
     private String countryRefTemplate = ".//*[@id='content']/form/table/tbody/tr[%s]/td[5]/a";
     private String zonesRef = "//main[@id='main']//td[3]/input";
@@ -26,27 +26,22 @@ public class Countries {
         this.driver = driver;
         wait = new WebDriverWait(driver, 10);
     }
-    public boolean isCountryTab()
+
+public boolean isCountriesBlock()
+{
+    driver.findElement(By.xpath("//span[contains(.,'Countries')]")).click();
+    By lPageFlag = By.xpath(pageFlag);
+    wait.until(ExpectedConditions.textToBePresentInElementLocated(lPageFlag, "Countries"));
+    return driver.findElement(lPageFlag).isDisplayed();
+}
+
+    public Boolean checkSortCountries()
     {
-        By CountryPage = By.xpath(countryPage);
-        return driver.findElement(CountryPage).isDisplayed();
+        By lCountriesRef = By.xpath(countriesRef);
+        List<WebElement> elements = driver.findElements(lCountriesRef);
+        return checkSortByAlfabet(elements);
     }
-    public Boolean ListOfCountries() {
-        By CountryLink = By.xpath(country);
-        List<WebElement> countries = driver.findElements(CountryLink);
-        return SortingByAlphabet(countries);
-    }
-    private Boolean SortingByAlphabet(List<WebElement> countries)
-    {
-        for (int i = 1; i < countries.size(); i++)
-        {
-            if (countries.get(i).getText().compareTo(countries.get(i+1).getText()) > 0)
-            {
-                return false;
-            }
-        }
-        return true;
-    }
+
     public ArrayList<Integer> getCountriesWithZone()
     {
         ArrayList<Integer> countNumbersOfCountry = new ArrayList<Integer>();
@@ -63,29 +58,19 @@ public class Countries {
         By lCountryRefTemplate = By.xpath(String.format(countryRefTemplate, "" + x));
         driver.findElement(lCountryRefTemplate).click();
     }
-    public boolean isEditCountry()
-    {
-        By lPageFlag = By.xpath(countryPage);
-        wait.until(ExpectedConditions.textToBePresentInElementLocated(lPageFlag, "Edit Country"));
-        return driver.findElement(lPageFlag).isDisplayed();
-    }
-    public Boolean checkSortZones()
-    {
-        By ZoneLink = By.xpath(zonesRef);
-        List<WebElement> zones = driver.findElements(ZoneLink);
-        return checkZonesByAlphabet(zones);
-    }
-    private Boolean checkZonesByAlphabet(List<WebElement> elements)
+
+    private Boolean checkSortByAlfabet(List<WebElement> elements)
     {
         for (int i = 1; i < elements.size(); i++)
         {
-            if (elements.get(i - 1).getAttribute("value").compareTo(elements.get(i).getAttribute("value")) > 0)
+            if (elements.get(i - 1).getText().compareTo(elements.get(i).getText()) > 0)
             {
                 return false;
             }
         }
         return true;
     }
+
     public void goToSomeCountry()
     {
         By lCountriesRef = By.xpath(countriesRef);

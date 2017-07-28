@@ -1,6 +1,7 @@
 package SeleniumTests;
 
 import OnlineShop.Countries;
+import OnlineShop.EditCountriesBlock;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -19,6 +20,7 @@ import static org.openqa.selenium.By.xpath;
 public class Task9_Sorting {
     protected WebDriver driver;
     protected Countries countries;
+    protected EditCountriesBlock editCountriesBlock;
     @Before
     public void beforeClass() {
         System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
@@ -33,29 +35,28 @@ public class Task9_Sorting {
         driver.findElement(name("remember_me")).click();
         driver.findElement(xpath(".//*[@id='box-login']/form/div[2]/button")).click();
         countries = new Countries(driver);
+        editCountriesBlock = new EditCountriesBlock(driver);
     }
     @Test
     public void CountrySorting()
     {
-       // countries = new Countries(driver);
-        countries.isCountryTab();
-        Assert.assertTrue(countries.ListOfCountries());
+        countries.isCountriesBlock();
+        Assert.assertTrue(countries.checkSortCountries());
     }
     @Test
     public void CountryZoneSorting()
     {
         driver.get("http://localhost/litecart/admin/?app=countries&doc=countries");
-        countries.isCountryTab();
+        countries.isCountriesBlock();
         ArrayList<Integer> countriesWithZone = countries.getCountriesWithZone();
         for (int i = 0; i < countriesWithZone.size(); i++)
         {
             countries.goToCountry(countriesWithZone.get(i));
-            countries.isEditCountry();
-            Assert.assertTrue(countries.checkSortZones());
+            Assert.assertTrue(editCountriesBlock.checkSortZones());
             driver.get("http://localhost/litecart/admin/?app=countries&doc=countries");
-            countries.isCountryTab();
+            countries.isCountriesBlock();
         }
-        Assert.assertTrue(countries.checkSortZones());
+        Assert.assertTrue(editCountriesBlock.checkSortZones());
     }
     @After
     public void afterClass()

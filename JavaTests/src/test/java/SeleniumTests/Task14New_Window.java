@@ -50,7 +50,7 @@ public class Task14New_Window {
     {
         adminPanel.isAdminPanel();
         driver.get("http://localhost/litecart/admin/?app=countries&doc=countries");
-        countries.isCountryTab();
+        countries.isCountriesBlock();
         countries.goToSomeCountry();
         editCountriesBlock.isEditCountriesBlock();
         for (int i = 0; i < editCountriesBlock.countLinks(); i++)

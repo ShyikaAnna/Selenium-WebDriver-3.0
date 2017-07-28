@@ -15,7 +15,7 @@ public class EditCountriesBlock {
     protected WebDriverWait wait;
 
     private String pageFlag = "//h1[contains(.,'Edit Country')]";
-    private String zonesRef = "//main[@id='main']//td[3]/input";
+    private String zonesRef = ".//*[@id='table-zones']/tbody//td[3]/input";
     private String linksToExternalWindows = ".//*[@id='content']//i[@class='fa fa-external-link']";
 
     public EditCountriesBlock(WebDriver driver)
